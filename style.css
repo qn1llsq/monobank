@@ -1,0 +1,611 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+body{
+    font-family: "Lato", sans-serif;
+    padding: 0;
+    margin: 0;
+    
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; /* начальная прозрачность */
+    transform: translateY(20px); /* небольшой сдвиг вниз */
+  }
+  to {
+    opacity: 1; /* конечная прозрачность */
+    transform: translateY(0); /* возвращаемся на место */
+  }
+}
+
+/* Применяем анимацию ко всему телу */
+body {
+  animation: fadeIn 1s ease-out; /* анимация для всего сайта */
+}
+
+/* Если хотите применить к каждому элементу сайта */
+.fade-in {
+  opacity: 0; /* начальная прозрачность */
+  animation: fadeIn 1s ease-out forwards; /* плавное появление для каждого элемента */
+  animation-delay: 0.3s; /* задержка перед началом анимации */
+}
+
+
+
+header{
+    gap: 30px;
+    font-family: "Lato", sans-serif;
+}
+
+header h4{
+    transition: transform 0.3s ease; 
+}
+
+header h4:hover{
+    transform: scale(1.1);
+}
+
+header h2{
+    display: flex;
+    position: absolute;
+    left: 180px;
+    top: 30px;
+    font-family: "Lato", sans-serif;
+    transition: transform 0.3s ease; 
+    
+}
+
+header h2:hover{
+    transform: scale(1.1);
+}
+
+header {
+    display: flex;
+    justify-content: end;
+    padding-right: 70px;
+    padding-top: 30px;
+    font-family: "Lato", sans-serif;
+    
+    
+}
+
+header a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.conteiner-1{
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Lato", sans-serif;
+    
+}
+
+.conteiner-1 p{
+    opacity: 0.8;
+    position: absolute;
+    top: 250px;
+    left: 550px;
+    font-size: 30px;
+}
+
+.card img{
+position: absolute;
+width: 350px;
+height: 200px;
+border-radius: 25px;
+left: 80px;
+top: 570px;
+}
+
+.phone img{
+position: absolute;
+width: 301px;
+height: 608px;
+left: 150px;
+top: 200px;
+} 
+
+.bg-color {
+    background-color: #dfcee9;
+    position: relative;
+    height: 90ch;
+}
+
+.span1{
+    font-size: 15px;
+    opacity: 1;
+    font-family: Lato, sans-serif;
+    font-size: 16px;
+    font-weight: 550;
+    line-height: 24px;
+}
+
+.buttons{
+    position: absolute;
+    left: 555px;
+    top: 450px;
+}
+
+.buttons button{
+    cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.buttons button:hover{
+    transform: scale(1.1); /* Увеличение размера кнопки при наведении */
+}
+
+
+
+button{
+    background-color: #fa5255;
+    border: 1px solid #fa5255;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: white;
+    width: 230px;
+    height: 60px;
+    border-radius: 20px;
+}
+
+input{
+    width: 270px;
+    height: 60px;
+    border-radius: 20px;
+    border: 0px solid ;
+    margin-right: 20px;
+    padding-left: 15px;
+}
+
+.dowlands img{
+    width: 200px;
+    height: 150px;
+    padding-top: 50px;
+}
+
+.conteiner-2 {
+    text-align: center;
+}
+
+.conteiner-2 h1{
+}
+
+.conteiner-2 p{
+    display: inline-block;
+    padding: 40px;
+    
+}
+
+.span2{
+    color: #fa5255;
+}
+
+table{
+    border: 1px solid;
+}
+
+.line-shake-to-pay-front-line{
+    border-radius: 240px 120px 240px 120px;
+    background: linear-gradient(90.21deg, #6638dd .44%, #7151c1 97.5%);
+    padding: 112px 105px 112px 112px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 400px;
+    width: 950px;
+    margin: 0 auto;
+    
+    
+   
+}
+
+.line-shake-to-pay-front-line h1{
+    color: white;
+    text-align: left;
+    font-weight: 800;
+    font-size: 40px;
+    position: absolute;
+    top: 1335px;
+    left: 700px;
+}
+
+.line-shake-to-pay-front-line p{
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: left;
+    position: absolute;
+    top: 1500px;
+    left: 658px;
+}
+
+.line-shake-to-pay-front-line button{
+    position: absolute;
+    top: 1670px;
+    left: 700px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.line-shake-to-pay-front-line button:hover{
+    transform: scale(1.1); /* Увеличение размера кнопки при наведении */
+}
+
+
+.circle{
+    opacity: 0.1;
+        width: 325px;       
+        height: 320px;      
+        background-color: rgb(255, 255, 255); 
+        border-radius: 50%; 
+        margin: 50px auto;  
+        position: absolute;
+}
+
+.line-shake-to-pay-front-line img{
+    position: absolute;
+    width: 365px;
+    height: 330px;
+    left: 195px;
+}
+
+.conteiner-3{
+    text-align: center;
+    padding-top: 100px;
+}
+
+.conteiner-3 p{
+    color: rgb(58, 58, 58);
+    font-size: 15px;
+    font-weight: 600;
+    padding-top: 20px;
+}
+
+
+.buttons-1 button:first-child {
+    opacity: 0.9;
+    background-color: red;
+}
+.buttons-1{
+    padding-top: 30px;
+}
+
+.buttons-1 button{
+    margin: 5px;
+    cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+    
+}
+
+.buttons-1 button:hover{
+    transform: scale(1.1); /* Увеличение размера кнопки при наведении */
+}
+
+
+.conteiner-3 img{
+    width: 265px;
+    height: 635px;
+    padding-top: 65px ;
+    position: absolute;
+    left: 300px;
+}
+
+.conteiner-3 h3{
+    font-size: 30px;
+    position: absolute;
+    top: 2350px;
+    left: 700px;
+    text-align: left;
+}
+
+.pay{
+    font-size: 30px;
+    position: absolute;
+    top: 2480px;
+    left: 700px;
+    text-align: left;
+    font-weight: 500;
+}
+
+.conteiner-4 h1{
+    text-align: center;
+    padding-top: 770px;
+    
+}
+
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    display: flex;
+    
+  }
+  
+  .card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .icon {
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+  
+  .green {
+    color: #4caf50;
+  }
+  
+  .blue {
+    color: #2196f3;
+  }
+  
+  .pink {
+    color: #e91e63;
+  }
+  
+  .orange {
+    color: #ff9800;
+  }
+  
+  .purple {
+    color: #9c27b0;
+  }
+  
+  p {
+    font-size: 16px;
+    color: #333;
+  }
+
+
+  .conteiner-5 p{
+    border: 2px solid black;
+
+  }
+
+  .conteiner-5{
+    width: 1150px;
+    padding-left: 180px;
+  }
+
+  .conteiner-6{
+    padding-top: 100px;
+  }
+
+  .conteiner-6 h1{
+    text-align: center;
+    font-size: 30px;
+
+  }
+
+  .buttons2{
+    padding-left: 480px;
+  }
+
+  .input-2{
+    background-color: rgb(245, 245, 245);
+  }
+
+  footer{
+    padding-top: 100px;
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    font-size: 25px;
+    
+  }
+
+.Viber{
+    color: #8861b2;
+    background-color: #f9f0ff;
+    border: 0px solid;
+    font-size: 20px;
+}
+
+.FACEBOOK{
+    color: #4c98f7;
+    background-color: #edf6ff;
+    border: 0px solid;
+    font-size: 20px;
+}
+
+
+.TELEGRAM{
+    color: #4c98f7;
+    background-color: #edf6ff;
+    border: 0px solid;
+    font-size: 20px;
+}
+
+.support{
+    padding: 20px;
+}
+
+.buttons2 button{
+    cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.buttons2 button:hover{
+    transform: scale(1.1); /* Увеличение размера кнопки при наведении */
+}
+
+.support button{
+    cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.support button:hover{
+    background-color: #8861b2;
+    color:#edf6ff ;
+            transform: scale(1.1); /* Увеличение размера кнопки при наведении */
+}
+
+
+.support a{
+    text-decoration: none;
+}
+
+
+
+
+.stend-card{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px auto;
+    max-width: 1200px; 
+    background-color: #1f0338;
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+.stend-card img{
+    width: 287;
+    height: 180;
+    background-color: rgb(#1f0338);   
+    padding-top: 100px;
+    padding-left: 150px;
+}
+
+.bg-color-2 {
+
+    background-color:#1f0338;
+    position: relative;
+    height: 90ch;
+    display: flex;
+    flex-direction: column;
+}
+
+button a{
+    color: white;
+    text-decoration: none;
+}
+
+footer .info{
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    text-align: left;
+    padding-left: 100px;
+    
+}
+
+footer span{
+    opacity: 0.5;
+    font-size: 20px;
+}
+
+footer .info a:hover{
+    color: #fa5255;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+
+footer .info a{
+    color: white;
+    text-decoration: none;
+    display: flex;
+    padding-bottom: 25px;
+    font-size: 20px;
+}
+
+footer p{
+    color: white;
+}
+
+footer h2{
+    opacity: 0.5;
+    font-weight: 800;
+    font-size: 35px;
+}
+
+.info-mono{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.btn-link:focus::after {
+    content: "Посилання відправлено!";
+    display: none;
+    position: absolute;
+    top: 75px;
+    right: 25px;
+    opacity: 0;
+    color: black;
+    background: white;
+    border: 2px solid white;
+    width: 180px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding-top: 5px;
+}
+
+.btn-link:focus::after {
+    display: block;
+    opacity: 1;
+}
+
+.stend-card-1 img{
+   
+    transition: transform 0.3s ease; 
+}
+
+.stend-card-1 img:hover{
+    transform: scale(1.1);
+    
+}
+
+.stend-card-2 img{
+   
+    transition: transform 0.3s ease; 
+}
+
+.stend-card-2 img:hover{
+    transform: scale(1.1);
+}
+
+
+
+.stend-card-3 img{
+    
+    transition: transform 0.3s ease; 
+}
+
+.stend-card-3 img:hover{
+    transform: scale(1.1);
+}
+
+.info-balck-card{
+    background-color: #1f0338 ;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background-color:#1f0338;
+    position: relative;
+    height: 90ch;
+    padding-top: 30px;
+}
+
+.info-balck-card img{
+    transition: transform 0.3s ease; 
+}
+
+.info-balck-card img:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 50px rgba(45, 0, 99, 0.8);
+}
+
+
